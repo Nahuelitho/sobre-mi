@@ -1,0 +1,50 @@
+#img{
+    display: block;
+    margin: 0 auto;
+    padding: 4px;
+}
+h1:hover{
+    color: rgb(59, 59, 59);
+}
+p{
+    font-weight: bold;
+    color:rgb(12, 8, 8);
+}
+a{
+    color: rgb(1, 8, 65);
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: bold;
+}
+#body{
+    justify-content: center;
+    text-align: center;
+    background-color:rgb(3, 128, 128);
+    margin: 0;
+    padding: 5px;
+    color: rgb(0, 0, 0);
+}
+body{
+    font-size: 25px;
+}
+.container{
+    border: 2px solid;
+    padding: 2px;
+    height: 100vh;
+    box-sizing: border-box;
+    background-color: rgb(1, 138, 138);
+}
+
+#div1, #div2, #div3, #div4{
+border: 1px dotted black;
+height: 20%;
+padding: 10px;
+transition:  0.3s;
+box-sizing: border-box;
+background-color: rgb(1, 138, 138);
+}
+
+#div1:hover, #div2:hover, #div3:hover, #div4:hover{
+    background-color: rgb(3, 145, 145);  
+    
+}
