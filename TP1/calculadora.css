@@ -1,0 +1,12 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color:rgb(168, 255, 255);
+}
+
+#contenedor{
+    padding:15px ;
+    background-color: aquamarine;
+    text-align: center;
+
+}
