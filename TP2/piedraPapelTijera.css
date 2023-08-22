@@ -1,0 +1,17 @@
+html{
+    text-align: center;
+    background-color: aquamarine;
+    margin: 0;
+    padding-top: 0;
+}
+#resultado{
+    border: 2px solid black;
+    height: 600px;
+    width: 1000px;
+    display: inline-block;
+    padding: 10px;
+    
+}
+table,tr,td{
+border: 2px solid black;
+}
