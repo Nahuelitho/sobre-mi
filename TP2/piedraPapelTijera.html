@@ -7,23 +7,33 @@
     <link rel="stylesheet" href="piedraPapelTijera.css">
 </head>
 <body>
+    <button>
+    <br>
+    </button>
+    <a href="../index.html">Inicio Direcciones</a>
+    <br>
     <h1>Bienvenidos al Juego! Piedra - Papel - Tijera </h1>
     <br>
+    Ingrese su nombre:<input type="text" required>
+    <br>
     <h3>Elija su opcion a jugar</h3>
+    <br>
+    <button><img src="img/cortar-con-tijeras.png" alt="" width="100" height="100"></button>
+    <button><img src="img/papel.png" alt="" width="100" height="100"></button>
+    <button><img src="img/piedra.png" alt="" width="100" height="100"></button>
+    <br>
     <select name="select" id="select">
-        <option value="piedra">Piedra</option>
-        <option value="papel">Papel</option>
-        <option value="tijera">Tijera</option>
+        <option value="Piedra">Piedra</option>
+        <option value="Papel">Papel</option>
+        <option value="Tijera">Tijera</option>
     </select>
     <br>
     <br>
-    <button onclick="">Jugar</button>
+    <button onclick="jugar()">Jugar</button>
     <br>
     <br>
     <h2>La computadora eligira su movimiento automaticamente</h2>
     <h3>A continuacion le mostramos los resultados: </h3>
-    <br>
-    <br>
     <div id="resultado">
         <table id="tabla">
             <thead>
@@ -31,13 +41,13 @@
                     <th>RESULTADOS DEL JUEGOS</th>
                 </tr>
                 <tr>
-                    <td>
-                        Opcion Jugador:
+                    <td id="optionJugador">
+                        Opcion del Usuario:
                     </td>
-                    <td>
+                    <td id="optionPc">
                         Opcion Computadora:
                     </td>
-                    <td>
+                    <td id="result">
                         Resultado General:
                     </td>
                 </tr>
@@ -45,7 +55,7 @@
         </table>
 
     </div>
-
+    
 
     <script src="piedraPapelTijeras.js">
 
