@@ -1,10 +1,13 @@
-html{
+html {
     text-align: center;
     background-color: rgb(189, 228, 208);
     margin: 0;
     padding-top: 0;
 }
-#resultado{
+a{
+    color: white;
+}
+#resultado {
     border: 2px solid black;
     height: 50%;
     width: 50%;
@@ -14,18 +17,84 @@ html{
     margin: 5%;
 }
 
-table{
-table-layout: fixed;
-border: 2px solid black;
+table {
+    table-layout: fixed;
+    border: 2px solid black;
 }
-td{
+
+td {
     width: 25%;
     padding: 5%;
     overflow: auto;
     border: 2px solid black;
 }
-tr{
+
+tr {
     border: 2px solid black;
     height: 75%;
     width: 75%;
+}
+
+@-webkit-keyframes jackInTheBox {
+    from {
+      opacity: 0;
+      -webkit-transform: scale(0.1) rotate(30deg);
+      transform: scale(0.1) rotate(30deg);
+      -webkit-transform-origin: center bottom;
+      transform-origin: center bottom;
     }
+  
+    50% {
+      -webkit-transform: rotate(-10deg);
+      transform: rotate(-10deg);
+    }
+  
+    70% {
+      -webkit-transform: rotate(3deg);
+      transform: rotate(3deg);
+    }
+  
+    to {
+      opacity: 1;
+      -webkit-transform: scale(1);
+      transform: scale(1);
+    }
+  }
+  
+  @keyframes jackInTheBox {
+    from {
+      opacity: 0;
+      -webkit-transform: scale(0.1) rotate(30deg);
+      transform: scale(0.1) rotate(30deg);
+      -webkit-transform-origin: center bottom;
+      transform-origin: center bottom;
+    }
+  
+    50% {
+      -webkit-transform: rotate(-10deg);
+      transform: rotate(-10deg);
+    }
+  
+    70% {
+      -webkit-transform: rotate(3deg);
+      transform: rotate(3deg);
+    }
+  
+    to {
+      opacity: 1;
+      -webkit-transform: scale(1);
+      transform: scale(1);
+    }
+  }
+  
+  .jackInTheBox {
+    -webkit-animation-name: jackInTheBox;
+    animation-name: jackInTheBox;
+  }
+  
+  .animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+  }
