@@ -11,6 +11,7 @@ function jugar() {
 
   let option = document.getElementById("select").value;
   document.getElementById("optionJugador").innerHTML = "La opcion del Usuario es: " + option;
+  
   //OPCION DE LA PC
   var numDecimal = Math.random() * 3;
   var optionPC = Math.floor(numDecimal);
