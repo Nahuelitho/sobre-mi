@@ -17,7 +17,6 @@
     <br>
     <div class="animated jackInTheBox">
         <p>Ingrese su nombre:</p><input id="nombre" type="text" required>
-        <button>Ingresar Nombre</button>
     </div>
     <br>
     <h3>Elija su opcion a jugar</h3>
@@ -25,6 +24,8 @@
     <button onclick="seleccionar('Piedra')"><img src="img/piedra.png" alt="" width="100" height="100"></button>
     <button onclick="seleccionar('Papel')"><img src="img/papel.png" alt="" width="100" height="100"></button>
     <button onclick="seleccionar('Tijera')"><img src="img/cortar-con-tijeras.png" alt="" width="100" height="100"></button>
+    <br>
+    <br>
     <br>
     <select name="select" id="select">
         <option value="Piedra">Piedra</option>
@@ -36,16 +37,27 @@
     <button onclick="jugar()">Jugar</button>
     <br>
     <br>
-    <h2 id="saludo"></h2>
+    <button onclick="reset()">Reset</button>
+    <h3 id="saludo"></h3>
+    <br>
+    <h1 id="advertencia"></h1>
     <br>
     <h2>La computadora eligira su movimiento automaticamente</h2>
     <h3>A continuacion le mostramos los resultados: </h3>
     <div id="resultado">
+        <div id="contador">
+            <h3>Contador: </h3>
+            <br>
+            <h4 id="resultU">Usuario: </h4>
+            <h4 id="resultPc">Computadora: </h4>
+            <h4 id="resultE">Empate: </h4>
+            </div>
         <table id="tabla">
             <thead>
                 <tr>
                     <th>RESULTADOS DEL JUEGOS</th>
                 </tr>
+                
                 <tr>
                     <td id="optionJugador">
                         Opcion del Usuario:
@@ -59,7 +71,7 @@
                 </tr>
             </thead>
         </table>
-
+        
     </div>
 
 

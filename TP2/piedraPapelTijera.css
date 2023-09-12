@@ -7,6 +7,12 @@ html {
 a{
     color: white;
 }
+
+img:hover{
+height: 95px;
+width: 95px;
+cursor: pointer;
+}
 #resultado {
     border: 2px solid black;
     height: 50%;
@@ -16,7 +22,11 @@ a{
     overflow: auto;
     margin: 5%;
 }
-
+#contador{
+  display:flex;
+  justify-content: flex-start;
+  
+}
 table {
     table-layout: fixed;
     border: 2px solid black;
@@ -34,7 +44,9 @@ tr {
     height: 75%;
     width: 75%;
 }
-
+/*select{
+  visibility: hidden;
+}*/
 @-webkit-keyframes jackInTheBox {
     from {
       opacity: 0;
