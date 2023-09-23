@@ -1,24 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="calculadora.css">
     <title>Calculadora</title>
 </head>
+
 <body>
     <br>
     <button>
-    <a href="../index.html">Inicio Direcciones</a>
-    <br>
+        <a href="../index.html">Inicio Direcciones</a>
+        <br>
     </button>
     <div id="contenedor">
-    <h1>Bienvenidos al programa de Calculadora</h1>
-    <br>
-    <h2>A continuacion le pediremos que ingrese dos numeros y que seleccione la operacion que desea realizar, luego haga click sobre el boton calcular!</h2>
-    <br>
-    
-   
+        <h1>Bienvenidos al programa de Calculadora</h1>
+        <br>
+        <h2>A continuacion le pediremos que ingrese dos numeros y que seleccione la operacion que desea realizar, luego
+            haga click sobre el boton calcular!</h2>
+        <br>
+
+
         <label for="numero1">Numero 1:</label>
         <input type="number" id="numero1">
 
@@ -26,7 +29,7 @@
         <input type="number" id="numero2">
         <br>
         <br>
-        
+
         <label for="seleccion">Seleccione la operacion que desea realizar:</label>
         <br>
         <br>
@@ -39,14 +42,16 @@
         <br>
         <br>
         <button onclick="calcular()">Calcular</button>
+        <button onclick="reset()">Reset</button>
 
-        
-    
-    <p id="resultado"></p>
-</div>
 
-<script src="calculadora.js">
 
-</script>
+        <p id="resultado"></p>
+    </div>
+
+    <script src="calculadora.js">
+
+    </script>
 </body>
+
 </html>
